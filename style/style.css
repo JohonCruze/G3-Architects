@@ -154,7 +154,8 @@
 }
 
 /*Main Styles*/
-main,footer {
+main,
+footer {
     max-width: 1140px;
     margin: 0 auto;
     border: 1px solid red;
@@ -226,12 +227,12 @@ main,footer {
 .feature-image {
     max-width: 560px;
     position: relative;
-    
+
 }
 
 .feature-image img {
     width: 100%;
-    
+
 }
 
 .feature-experience {
@@ -310,33 +311,32 @@ main,footer {
 }
 
 .sponspors-image-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 90px;
+    padding-top: 30px;
 }
 
 .sponspors-image-container img {
     filter: grayscale(1);
-    width: 130px;
 }
-.sponspors-image-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
+
 /*Footer Style Starts*/
 
-.footer{
+.footer {
     margin-top: 80px;
+    background-color: #FFF4E7;
 }
 
 .footer-text {
     text-align: center;
     padding: 25px 0;
-    background-color: #FFF4E7;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
 }
+
 /*Footer Style Ends*/
 
 
@@ -349,9 +349,22 @@ main,footer {
     .teams {
         flex-direction: column;
     }
+    .banner-content {
+        padding-top: 40px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
 
     .banner-description {
         padding: 0 20px;
+    }
+
+    .teams {
+        padding: 20px 0;
     }
 
     .teams-image-container {
@@ -360,8 +373,44 @@ main,footer {
     }
 
     .teams-content {
+        margin: 0 0;
+    }
+
+    .teams-image-container img {
+        width: 100%;
+    }
+
+    .facts {
+        margin: 0 0;
+    }
+
+    .facts-content {
+        max-width: 100%;
         margin: 0 20px;
     }
+
+    .facts-card {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sponspors {
+        margin: 0 20px;
+    }
+
+    .sponspors-image-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .sponspors-image-container img {
+        width: 50%;
+    }
+    .footer-text{
+        margin: 0 20px;
+    }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
