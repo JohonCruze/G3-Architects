@@ -422,7 +422,7 @@ footer {
     }
 
     .sponspors-image-container img {
-        width: 50%;
+        width: 30%;
     }
     .footer-text{
         margin: 0 20px;
@@ -431,12 +431,91 @@ footer {
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams {
+    .navbar,
+    .nav-links,
+    .teams,.features {
         flex-direction: column;
     }
 
     .teams-image-container {
 
+        margin: 0 20px;
+    }
+    .banner-content {
+        padding-top: 40px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .banner-description {
+        padding: 0 20px;
+    }
+
+    .teams {
+        padding: 20px 0;
+    }
+
+    .teams-image-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .teams-content {
+        margin: 0 0;
+    }
+
+    .teams-image-container img {
+        width: 430px;
+    }
+
+    .features {
+        margin: 35px;
+    }
+
+    .feature-experience {
+        padding: 10px 30px;
+        font-size: 16px;
+        max-width: 250px;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+    }
+    .feature-experience span {
+        font-size: 16px;
+    }
+
+    .facts {
+        margin: 0 0;
+    }
+
+    .facts-content {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    .facts-card {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sponspors {
+        margin: 0 20px;
+    }
+
+    .sponspors-image-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .sponspors-image-container img {
+        width: 30%;
+    }
+    .footer-text{
         margin: 0 20px;
     }
 }
